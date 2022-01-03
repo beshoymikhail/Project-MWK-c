@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .cart-page {
+            margin: 80px auto;
+
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cart_info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        th {
+            text-align: left;
+            padding: 5px;
+            color: #fff;
+            background: #ff523b;
+            font-weight: normal;
+        }
+
+        td {
+            padding: 10px 5px;
+        }
+
+        td input {
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+        }
+
+        td a {
+            color: #ff523b;
+            font-size: 12px;
+
+        }
+
+        td img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+
+        }
+
+        .total-price {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .total-price table {
+            border-top: 3px solid #ff523b;
+            width: 100%;
+            max-width: 350px;
+        }
+    </style>
+    <title>project</title>
+</head>
+
+<body>
+    <div id="head">
+        <img src="./imges/logo.jpg" id="logo-pic">MWK-C
+      </div>
+     
+       <div id="nav-container">
+            <div class="nav-item"><a href="project.html" target="_self">HOME</a></div>
+            <div class="nav-item"><a href="men.html" target="_self">MEN</a></div>
+            <div class="nav-item"><a href="women.html" target="_self" >WOMEN</a></div>
+            <div class="nav-item"><a href="kids.html" target="_self">KIDS</a></div>
+            <div class="nav-item"><a href="cart.html" target="_self">Sh-Cart</a></div>
+            
+            <a href="./registeration.html" id="reglink" style="margin: 1.5rem 0 0rem 42rem;"> <span id="spanreg" style="text-decoration: none;padding-right: 8px;">Register</span><i class="fas fa-user"></i></a>
+            <a href="/project.html" onclick="logout()" id="out" style="margin: 1.4rem;"> <span id="logout" style="text-decoration: underline;padding-right: 10px;font-weight: 800;"></span></a>
+        
+        </div>
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart_info">
+                        <img src="imges/man/ryady.jpg">
+                        <p>Blue printed Tshirt</p>
+                        <small>price:$50.00</small>
+                        <a href="">Remove</a>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td id="Bp" class="td">$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart_info">
+                        <img src="imges/man/rakbatsh.jpg">
+                        <p>White printed Tshirt</p>
+                        <small>price:$75.00</small>
+                        <a href="">Remove</a>
+                    </div>
+                </td>
+                <td><input type="number" value="1" id="num"></td>
+                <td id="pw" class="td">$75.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart_info">
+                        <img src="imges/man/malejaket.jpg">
+                        <p>Male Jacket</p>
+                        <small>price:$100.00</small>
+                        <a href="">Remove</a>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td id="Mj" class="td">$100.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>Tatal</td>
+                    <td>$235.00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="pull-left">
+                               
+            <a href="project.html" class="btn btn-default">
+                
+                <i class="fa fa-chevron-left"></i> Continue Shopping
+                
+            </a>
+            
+        </div>
+        <div class="pull-right">
+           
+
+            <button type="submit" name="update" value="Update Cart" class="btn btn-default">
+                
+
+                <i class="fa fa-refresh"></i> Update Cart
+
+            </button>
+
+            <a href="cart.html" class="btn btn-primary">
+
+                Proceed Checkout <i class="fa fa-chevron-right"></i>
+
+            </a>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="links">
+        <div class="concat">
+            <ul>
+                <li><a href="https://www.facebook.com" target="-blank">facebook page</a></li>
+                <li><a href="https://www.instgram.com" target="-blank">instgram page</a></li>
+                <li><a href="https://www.youtube.com" target="-blank">youtube</a></li>
+                <li><a href="aboutus.html" target="blank">about us</a></li>
+                <li><a href="visa.html" target="_self">My visa</a></li>
+            </ul>
+        </div>
+        </div>
+    
+    <footer>
+        copy right @ eng/beshoy &eng/ahmed & eng/botros
+    </footer>
+    <script src="./Js/loaduser.js"></script>
+
+
+</body>
+
+</html>
